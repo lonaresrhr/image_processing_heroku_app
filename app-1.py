@@ -24,7 +24,7 @@ uploaded_file = st.sidebar.file_uploader("Upload your input image",type=["png","
     
 if uploaded_file is not None:
             our_image = Image.open(uploaded_file)
-            st.text('Original Image')
+            st.text('Processed Image')
             # st.write(type(our_image))
             st.sidebar.image(our_image,use_column_width=True)
 
