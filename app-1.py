@@ -64,5 +64,5 @@ if enhance_type == 'Blurring':
             blur_img = cv2.GaussianBlur(img, (11, 11), blur_rate)
             st.image(blur_img)
       
- st.set_option("deprecation.showfileUploaderEncoding", False)   
+st.set_option("deprecation.showfileUploaderEncoding", False)   
 
