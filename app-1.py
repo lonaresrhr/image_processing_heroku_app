@@ -20,7 +20,7 @@ uploaded_file = st.sidebar.file_uploader("Upload your input image",type=["png","
 #if uploaded_file is not None:
 #our_image = Image.open(uploaded_file)
 #input_image=cv2.imread(uploaded_file)
-
+st.set_option('deprecation.showfileUploaderEncoding', False)
     
 if uploaded_file is not None:
             our_image = Image.open(uploaded_file)
