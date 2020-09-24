@@ -5,7 +5,7 @@ import pickle
 import cv2
 from PIL import Image,ImageEnhance
 
-
+st.set_option("deprecation.showfileUploaderEncoding", False)
 st.write("""
 # Simple image processing   App
 """)
@@ -20,7 +20,7 @@ uploaded_file = st.sidebar.file_uploader("Upload your input image",type=["png","
 #if uploaded_file is not None:
 #our_image = Image.open(uploaded_file)
 #input_image=cv2.imread(uploaded_file)
-st.set_option('deprecation.showfileUploaderEncoding', False)
+
     
 if uploaded_file is not None:
             our_image = Image.open(uploaded_file)
@@ -63,4 +63,6 @@ if enhance_type == 'Blurring':
             img = cv2.cvtColor(new_img, 1)
             blur_img = cv2.GaussianBlur(img, (11, 11), blur_rate)
             st.image(blur_img)
-       
+      
+ st.set_option("deprecation.showfileUploaderEncoding", False)   
+
